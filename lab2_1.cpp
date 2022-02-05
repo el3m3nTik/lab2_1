@@ -1,6 +1,5 @@
 #include<iostream>
 #include <chrono>
-using namespace std;
 class Timer
 {
 private:
@@ -35,8 +34,8 @@ uint64_t factorial(int n)
 int main()
 {
 	int n;
-	cin >> n;
+	std::cin >> n;
 	Timer t;
-	cout << factorial(n) << endl;
-	cout << "Time elapsed:" << t.elapsed() << endl;
+	std::cout << factorial(n) << std::endl;
+	std::cout << "Time elapsed:" << t.elapsed() << std::endl;
 }
